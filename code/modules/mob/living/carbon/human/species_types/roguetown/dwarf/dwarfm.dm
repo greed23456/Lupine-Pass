@@ -19,8 +19,8 @@
 	to improve their crafts, both in engineering workshops and the forges. \
 	Dwarves are hearty, but are not known for their speed or eyesight... \
 	Each dwarf hails from a ancient fortress named after the most plentiful mineral.<br>\
-	(+1 Constitution, +1 Willpower)"
-
+	(+1 Constitution, +1 Willpower, Small Size)"
+	var/mob_size = MOB_SIZE_SMALL
 	skin_tone_wording = "Dwarf Fortress"
 
 	default_color = "FFFFFF"

@@ -7,8 +7,8 @@
 	desc = "<b>Verminvolk</b><br>\
 	A race akin to wild-kin, except afflicted with significantly smaller stature. \
 	A bit less respected than their kin due to their closer resemblance to vermin, like the dichotomy between Kobold and Sissean.<br>\
-	(+1 Speed, Keen Ears Trait)"
-
+	(+1 Speed, Keen Ears Trait, Small Size)"
+	var/mob_size = MOB_SIZE_SMALL
 	expanded_desc = "A race akin to wild-kin, except afflicted with significantly smaller stature. \
 	A bit less respected than their kin due to their closer resemblance to vermin, like the dichotomy between Kobold and Sissean."
 	default_color = "444"
