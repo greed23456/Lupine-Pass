@@ -46,7 +46,7 @@
 /obj/structure/plasticflaps/CanAStarPass(ID, to_dir, caller)
 	if(isliving(caller))
 		var/mob/living/M = caller
-		if(!M.ventcrawler && M.mob_size != MOB_SIZE_TINY)
+		if(!M.ventcrawler && M.mob_size != MOB_SIZE_SMALL)
 			return FALSE
 	var/atom/movable/M = caller
 	if(M && M.pulling)
