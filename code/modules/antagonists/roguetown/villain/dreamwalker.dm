@@ -96,7 +96,7 @@
 	H.change_stat(STATKEY_CON, 2)
 	H.change_stat(STATKEY_PER, 2)
 	H.change_stat(STATKEY_SPD, 2)
-	H.change_stat(STATKEY_WIL, 2)
+	H.change_stat(STATKEY_END, 2)
 
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/blink)

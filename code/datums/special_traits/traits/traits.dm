@@ -463,7 +463,7 @@
 /datum/special_trait/atrophy/on_apply(mob/living/carbon/human/character)
 	character.change_stat(STATKEY_STR, -2)
 	character.change_stat(STATKEY_CON, -2)
-	character.change_stat(STATKEY_WIL, -1)
+	character.change_stat(STATKEY_END, -1)
 
 /datum/special_trait/lazy
 	name = "Lazy"
@@ -473,7 +473,7 @@
 /datum/special_trait/lazy/on_apply(mob/living/carbon/human/character)
 	character.change_stat(STATKEY_STR, -1)
 	character.change_stat(STATKEY_CON, -1)
-	character.change_stat(STATKEY_WIL, -1)
+	character.change_stat(STATKEY_END, -1)
 	character.change_stat(STATKEY_SPD, -1)
 	character.change_stat(STATKEY_PER, -1)
 

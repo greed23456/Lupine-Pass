@@ -477,7 +477,7 @@
 	category_tags = list(CTAG_MARTYR)
 	subclass_stats = list(
 		STATKEY_CON = 3,
-		STATKEY_WIL = 3,
+		STATKEY_END = 3,
 		STATKEY_STR = 2,
 		STATKEY_PER = 1,
 		STATKEY_INT = 1

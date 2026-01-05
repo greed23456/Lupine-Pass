@@ -63,7 +63,7 @@
 		switch(H.age)
 			if(AGE_MIDDLEAGED)
 				change_stat(STATKEY_SPD, -1)
-				change_stat(STATKEY_WIL, 1)
+				change_stat(STATKEY_END, 1)
 			if(AGE_OLD)
 				change_stat(STATKEY_STR, -1)
 				change_stat(STATKEY_SPD, -2)
@@ -75,7 +75,7 @@
 			if(check_blacklist(ckey(key)))
 				change_stat(STATKEY_STR, -5)
 				change_stat(STATKEY_SPD, -20)
-				change_stat(STATKEY_WIL, -2)
+				change_stat(STATKEY_END, -2)
 				change_stat(STATKEY_CON, -2)
 				change_stat(STATKEY_INT, -20)
 				change_stat(STATKEY_LCK, -20)
@@ -96,7 +96,7 @@
 			return STAINT
 		if(STAT_CONSTITUTION)
 			return STACON
-		if(STAT_WILLPOWER)
+		if(STAT_ENDURANCE)
 			return STAWIL
 		if(STAT_SPEED)
 			return STASPD
@@ -206,7 +206,7 @@
 				BUFCON++
 			STACON = newamt
 
-		if(STATKEY_WIL)
+		if(STATKEY_END)
 			newamt = STAWIL + amt
 			if(BUFEND < 0)
 				BUFEND = BUFEND + amt
@@ -288,7 +288,7 @@
 			return STASTR
 		if(STATKEY_PER)
 			return STAPER
-		if(STATKEY_WIL)
+		if(STATKEY_END)
 			return STAWIL
 		if(STATKEY_CON)
 			return STACON
@@ -346,8 +346,8 @@
 				new_amt = STACON - result_amt
 			STACON = new_amt
 
-		if("willpower")
-			get_stat_level(STATKEY_WIL)
+		if("endurance")
+			get_stat_level(STATKEY_END)
 			if(STAWIL < min_amt)
 				result_amt = min_amt - STAWIL
 				new_amt = STAWIL + result_amt
